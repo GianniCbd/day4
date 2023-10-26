@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background-color: burlywood;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#cards #postit {
+  margin-bottom: 2%;
+
+  flex: 0 0 22.222222%;
+  height: 250px;
+}
+#postit p {
+  margin-top: 20px;
+  font-family: cursive;
+  font-weight: 500;
+}
+#postit {
+  display: flex;
+}
+
+.white {
+  background-color: white;
+  box-shadow: inset -6px -50px 100px -60px #000000;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  transform: rotate(-2deg);
+  transform-origin: top left;
+  transition-duration: 3s;
+}
+
+.lightblue {
+  background-color: lightblue;
+  box-shadow: inset -6px -50px 100px -60px #000000;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  transform: rotate(-2deg);
+  transform-origin: top left;
+}
+
+.lightgreen {
+  background-color: lightgreen;
+  box-shadow: inset -6px -50px 100px -60px #000000;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  transform: rotate(2deg);
+  transform-origin: top left;
+  transition: font-size;
+  transition-duration: 2s;
+}
+
+#cards .lightgreen:hover {
+  font-size: 40px;
+  background-color: yellowgreen;
+}
+
+#cards .lightblue:hover {
+  transform: rotate(45deg);
+}
+
+#cards .white:hover {
+  transform: rotate(-20deg);
+}
